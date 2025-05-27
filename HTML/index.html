@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="help.html" target="_blank">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Banner -->
+  <div id="welcomeBanner">
+    <h1 id="mainHeader" class="highlight">Welcome to the Community Portal</h1>
+    <p>Get started with our upcoming events and services! <span class="special-offer">Special Offer Today!</span></p>
+  </div>
+
+  <!-- Image Gallery -->
+  <section id="gallery">
+    <h2>Community Event Gallery</h2>
+    <table>
+      <caption>Past Events</caption>
+      <tr>
+        <td><img src="https://media.istockphoto.com/id/1324561072/photo/party-people-enjoy-concert-at-festival-summer-music-festival.jpg?s=612x612&w=0&k=20&c=rT--yThoBJSdYFUb9nm-7oDvBZuhNE9LmB5uYmlxvSs=" alt="Event 1" title="Music Night" class="gallery-img"/></td>
+        <td><img src="https://images.indianexpress.com/2023/09/food-festival-4.jpg" alt="Event 2" title="Food Festival" class="gallery-img"/></td>
+        <td><img src="https://lh6.googleusercontent.com/jP5q25j0ihqXPag0HhzqoifnoFR-eT5GPkVvZHbKz-QFGsoNREJVaBSC56c8-GFZwHK6vAA_WvZPmlxpdIRvKQmhDh8eaYaKJKI_dJ5m_rzutPKfllFnC50cWt0rKSh7mHh7fyu1xH5cbC_xYaO4t5w" alt="Event 3" title="Art Show" class="gallery-img"/></td>
+      </tr>
+      <tr>
+        <td><img src="https://www.asterhospitals.in/sites/default/files/styles/webp/public/2024-03/marathon.jpg.webp?itok=cE-XHbHj" alt="Event 4" title="Marathon" class="gallery-img"/></td>
+        <td><img src="https://assets.hvmag.com/2023/05/downsized-AdobeStock_319843809.png" alt="Event 5" title="Craft Fair" class="gallery-img"/></td>
+        <td><img src="https://media.istockphoto.com/id/176197633/vector/vector-of-social-business-meeting.jpg?s=612x612&w=0&k=20&c=Rv65W_FxGICG54da0mvfwp1IeqaeKMhBCAvkszhLUjE=" alt="Event 6" title="Community Meet" class="gallery-img"/></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="registration">
+    <h2>Register for an Event</h2>
+    <form id="eventForm">
+      <label>Name: <input type="text" name="name" required placeholder="Your Name" autofocus /></label>
+      <label>Email: <input type="email" name="email" required placeholder="you@example.com" /></label>
+      <label>Phone: <input type="tel" id="phone" name="phone" required /></label>
+      <label>Date: <input type="date" name="date" required /></label>
+      <label>Event Type:
+        <select id="eventType">
+          <option value="music">Music</option>
+          <option value="sports">Sports</option>
+          <option value="workshop">Workshop</option>
+        </select>
+      </label>
+      <label>Message: <textarea id="messageBox" name="message" rows="4" cols="30"></textarea></label>
+      <button type="submit" id="registerBtn">Submit</button>
+      <output id="formOutput"></output>
+    </form>
+  </section>
+
+  <!-- Video Invite -->
+  <section id="video">
+    <h2>Promo Video</h2>
+    <video id="promoVideo" width="320" height="240" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p id="videoStatus"></p>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <p>Contact us at <a href="mailto:community@city.org">community@city.org</a></p>
+  </footer>
+</body>
+</html>
