@@ -6,6 +6,7 @@
   <title>Community Portal</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="main.js" defer></script>
 </head>
 <body>
@@ -52,6 +53,7 @@
       <label>Name: <input type="text" name="name" required placeholder="Your Name" autofocus /></label>
       <label>Email: <input type="email" name="email" required placeholder="you@example.com" /></label>
       <label>Phone: <input type="tel" id="phone" name="phone" required /></label>
+      <div id="phoneError" style="color: red; font-size: 0.9em;"></div>
       <label>Date: <input type="date" name="date" required /></label>
       <label>Event Type:
         <select id="eventType">
