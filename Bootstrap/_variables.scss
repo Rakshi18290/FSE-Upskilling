@@ -1,0 +1,8 @@
+
+// Custom Bootstrap Variable Overrides
+
+$primary: #6f42c1;          // Purple primary color
+$border-radius: 1rem;       // Rounded corners
+
+// Import Bootstrap source SCSS from node_modules
+@import "../node_modules/bootstrap/scss/bootstrap";
